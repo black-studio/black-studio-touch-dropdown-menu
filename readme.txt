@@ -1,7 +1,7 @@
 === Black Studio Touch Dropdown Menu ===
 Contributors: marcochiesi, thedarkmist
 Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/
-Tags: touch, touch screen, mobile, menu, dropdown, drop-down, navigation, hover, mouseover, ipad, iphone, android
+Tags: touch, touchscreen, mobile, device, menu, dropdown, drop-down, nav, navigation, hover, mouseover, ipad, iphone, android, smartphone, tablet, click
 Requires at least: 3.0
 Tested up to: 3.4
 Stable tag: 0.1
@@ -17,7 +17,7 @@ Note: This is a BETA release, but you can safely try it, since the plugin only a
 = Links =
 
 * [Plugin's web page](http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/)
-* [Support forum](http://wordpress.org/support/black-studio-touch-dropdown-menu)
+* [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu)
 * [Follow us on Twitter](https://twitter.com/blackstudioita)
 
 == Installation ==
@@ -44,7 +44,7 @@ function my_custom_selector($selector) {
 
 = The plugin doesn't work as expected =
 
-Please post a message in the [Support forum](http://wordpress.org/support/black-studio-touch-dropdown-menu), providing the following information:
+Please post a message in the [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu), providing the following information:
 
 * Description of the problem and steps to reproduce it
 * Error messages if any
