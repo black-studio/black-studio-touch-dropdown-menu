@@ -12,7 +12,7 @@ Add support for navigation dropdown menus on mobile / touch devices.
 
 Navigation dropdown menus are widely used, especially on sites with lots of pages and/or categories, since they allow to go directly to almost every page of the site, with no need to navigate through all the intermediate pages in the hierarchy. Unfortunately dropdown menus do not work well with mobile / touch devices, because the "mouseover" event is not handled, so when the user click a top level menu, the browser follows the link instead of opening the dropdown menu. This plugin is a solution for that. On touch devices, the first click (tap) on a top level menu only expands the nested dropdown menu, while the second click goes to the link. This is the same behavior natively adopted by iPad / iPhone since iOS 5, so this plugin is intended to work with previous versions of iOS and with other mobile platforms that do not have such native behavior (Android, etc).
 
-Note: This is a BETA release, but you can safely try it, since the plugin only adds a javascript behavior on menus for touch devices and it doesn't change the contents of your site in any way, nor it affects behavior on standard browsers. If you encounter any issues please report them in the [support forum](http://wordpress.org/support/black-studio-touch-dropdown-menu). 
+Note: This is a BETA release, but you can safely try it, since the plugin only adds a javascript behavior on menus for touch devices and it doesn't change the contents of your site in any way, nor it affects behavior on standard browsers. If you encounter any issues please report them in the [support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu). 
 
 = Links =
 
