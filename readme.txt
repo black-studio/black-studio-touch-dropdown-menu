@@ -4,7 +4,7 @@ Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-d
 Tags: touch, touchscreen, mobile, device, menu, dropdown, drop-down, nav, navigation, hover, mouseover, ipad, iphone, android, smartphone, tablet, click
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 0.1
+Stable tag: 0.2
 
 Add support for navigation dropdown menus on mobile / touch devices.
 
@@ -38,7 +38,7 @@ Example (based on Twenty Eleven theme markup):
 `
 add_filter('black_studio_touch_dropdown_menu_selector', 'my_custom_selector');
 function my_custom_selector($selector) {
-	return 'nav li:has(ul) > a';
+    return 'nav li:has(ul) > a';
 }
 `
 
@@ -54,6 +54,10 @@ Please post a message in the [Support forum](http://wordpress.org/support/plugin
 * List of other Wordpress plugins installed
 
 == Changelog ==
+
+= 0.2 =
+* General code optimization (thanks to Ross McKay for the useful suggestions)
+* Javascript minified
 
 = 0.1 =
 * First beta release
