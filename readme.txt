@@ -3,16 +3,16 @@ Contributors: marcochiesi, thedarkmist
 Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/
 Tags: touch, touchscreen, mobile, device, menu, dropdown, drop-down, nav, navigation, hover, mouseover, ipad, iphone, android, smartphone, tablet, click
 Requires at least: 3.0
-Tested up to: 3.4
-Stable tag: 0.2
+Tested up to: 3.9.1
+Stable tag: 0.3
 
 Add support for navigation dropdown menus on mobile / touch devices.
 
 == Description ==
 
-Navigation dropdown menus are widely used, especially on sites with lots of pages and/or categories, since they allow to go directly to almost every page of the site, with no need to navigate through all the intermediate pages in the hierarchy. Unfortunately dropdown menus do not work well with mobile / touch devices, because the "mouseover" event is not handled, so when the user click a top level menu, the browser follows the link instead of opening the dropdown menu. This plugin is a solution for that. On touch devices, the first click (tap) on a top level menu only expands the nested dropdown menu, while the second click goes to the link. This is the same behavior natively adopted by iPad / iPhone since iOS 5, so this plugin is intended to work with previous versions of iOS and with other mobile platforms that do not have such native behavior (Android, etc).
+Navigation dropdown menus are widely used, especially on sites with lots of pages and/or categories, since they allow to go directly to almost every page of the site, with no need to navigate through all the intermediate pages in the hierarchy. Unfortunately dropdown menus do not work well with mobile / touch devices, because the "mouseover" event is not handled, so when the user click a top level menu, the browser follows the link instead of opening the dropdown menu. This plugin is a solution for that situation. On touch devices, the first click / tap on a top level menu (or, in general on any menu with children) only expands the nested dropdown menu, while the second one brings to the link. This is the same behavior natively adopted by iPad / iPhone starting from iOS version 5, so this plugin is intended to work with previous versions of iOS and with other mobile platforms that do not have such native behavior (Android, etc).
 
-Note: This is a BETA release, but you can safely try it, since the plugin only adds a javascript behavior on menus for touch devices and it doesn't change the contents of your site in any way, nor it affects behavior on standard browsers. If you encounter any issues please report them in the [support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu). 
+Note: This has to be considered a BETA release, but you can safely try it, since the plugin only adds a javascript behavior on menus for touch devices and it doesn't change the contents of your site in any way, nor it affects behavior on standard browsers. If you encounter any issues please report them in the [support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu). 
 
 = Links =
 
@@ -26,7 +26,7 @@ This section describes how to install and use the plugin.
 
 1. Install automatically through the `Plugins` menu and `Add New` button (or upload the entire `black-studio-touch-dropdown-menu` folder to the `/wp-content/plugins/` directory)
 2. Activate the plugin
-3. This plugin has no options, it only modifies the behavior of navigation dropdown menus
+3. This plugin has no options, it only modifies the behavior of navigation dropdown menus, by including a javascript file on the frontend of your site
 
 == Frequently Asked Questions ==
 
@@ -42,18 +42,24 @@ function my_custom_selector($selector) {
 }
 `
 
-= The plugin doesn't work as expected =
+= Troubleshooting =
 
-Please post a message in the [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu), providing the following information:
+If you think the plugin doesn't work as expected. please post a message in the [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu), providing the following information:
 
 * Description of the problem and steps to reproduce it
-* Error messages if any
+* Error messages if any (especially in the browser javascript console)
 * Browser / OS / Device in use
 * Wordpress version in use
 * Wordpress theme in use
 * List of other Wordpress plugins installed
 
 == Changelog ==
+
+= 0.3 =
+* Added support for Internet Explorer 10+ on Windows 8 touch devices
+* Fixed weird chars in js file
+* Integration with WordPress SCRIPT_DEBUG constant for javascript debugging purposes
+* Enhanced plugin internal version handling
 
 = 0.2 =
 * General code optimization (thanks to Ross McKay for the useful suggestions)
