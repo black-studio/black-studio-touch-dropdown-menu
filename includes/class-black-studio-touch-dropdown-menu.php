@@ -92,9 +92,9 @@ class Black_Studio_Touch_Dropdown_Menu {
 	 */
 	public function enqueue_scripts() {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$version = black_studio_touch_dropdown_menu_get_version();
 		$default_selector = 'li:has(ul) > a';
 		$default_selector_leaf = 'li li li:not(:has(ul)) > a';
+		$default_force_ios5 = false;
 		wp_enqueue_script(
 			'black-studio-touch-dropdown-menu',
 			plugins_url( 'js/black-studio-touch-dropdown-menu' . $suffix . '.js', dirname( __FILE__ ) ),
@@ -103,7 +103,8 @@ class Black_Studio_Touch_Dropdown_Menu {
 		);
 		$params = array(
 			'selector' => apply_filters( 'black_studio_touch_dropdown_menu_selector', $default_selector ),
-			'selector_leaf' => apply_filters( 'black_studio_touch_dropdown_menu_selector_leaf', $default_selector_leaf )
+			'selector_leaf' => apply_filters( 'black_studio_touch_dropdown_menu_selector_leaf', $default_selector_leaf ),
+			'force_ios5' => apply_filters( 'black_studio_touch_dropdown_menu_force_ios5', $default_force_ios5 )
 		);
 		wp_localize_script( 'black-studio-touch-dropdown-menu', 'black_studio_touch_dropdown_menu_params', $params );
 	}

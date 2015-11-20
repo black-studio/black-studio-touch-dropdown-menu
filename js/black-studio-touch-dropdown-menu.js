@@ -5,17 +5,18 @@
 ( function( $ ) {
 
 	/* Detect device in use  */
-	var black_studio_is_touch = ( ( 'ontouchstart' in window ) || ( window.navigator.msPointerEnabled ) ),
-		black_studio_is_ios5 = /iPad|iPod|iPhone/.test( navigator.platform ) && 'matchMedia' in window,
-		black_studio_touch_dropdown_menu_apply = black_studio_is_touch && ! black_studio_is_ios5,
-		black_studio_superfish_fix = false;
+	var params = black_studio_touch_dropdown_menu_params,
+		is_touch = ( ( 'ontouchstart' in window ) || ( window.navigator.msPointerEnabled ) ),
+		is_ios5 = /iPad|iPod|iPhone/.test( navigator.platform ) && 'matchMedia' in window,
+		force_ios5 = params.force_ios5,
+		superfish_fix = false;
 
 	/* Apply dropdown effect on first click */
-	if ( black_studio_touch_dropdown_menu_apply ) {
+	if ( is_touch && ( ! is_ios5 || force_ios5 ) ) {
 
 		$( document ).ready(function() {
 
-			$( black_studio_touch_dropdown_menu_params.selector ).each(function() {
+			$( params.selector ).each(function() {
 
 				var $this = $(this);
 
@@ -30,16 +31,16 @@
 					var i, noclick;
 
 					// Hack for superfish menus with low delay
-					if ( ! black_studio_superfish_fix && $.fn.superfish !== undefined ) {
+					if ( ! superfish_fix && $.fn.superfish !== undefined ) {
 						for ( i = 0; i < $.fn.superfish.o.length; i++ ) {
 							$.fn.superfish.o[i].delay = 800;
 						}
-						black_studio_superfish_fix = true;
+						superfish_fix = true;
 					}
 
 					// Reset other menus
 					noclick = ! $this.data( 'dataNoclick' );
-					$( black_studio_touch_dropdown_menu_params.selector ).each(function() {
+					$( params.selector ).each(function() {
 						$( this ).data( 'dataNoclick', false);
 					});
 					$this.data( 'dataNoclick', noclick );
@@ -58,10 +59,12 @@
 			}); // end each
 
 			// Fix for 3rd+ level menus not working in some circumstances
-			$( black_studio_touch_dropdown_menu_params.selector_leaf ).each(function() {
+			$( params.selector_leaf ).each(function() {
+
 				$( this ).bind( 'touchstart', function(){
 					window.location = this.href;
 				}); // end touchstart
+
 			}); // end each
 
 		}); // end ready
