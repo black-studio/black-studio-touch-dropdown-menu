@@ -245,7 +245,7 @@ module.exports = function( grunt ) {
 			},
 			plugin_vs_internal: { //Check plugin header version against internal defined version
 				version1: 'plugin',
-				version2: grunt.file.read('black-studio-touch-dropdown-menu.php').match( /version = '(.*)'/ )[1],
+				version2: grunt.file.read('includes/class-black-studio-touch-dropdown-menu.php').match( /version = '(.*)'/ )[1],
 				compare: '=='
 			}
 		},
