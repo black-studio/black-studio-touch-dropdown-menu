@@ -257,7 +257,7 @@ module.exports = function( grunt ) {
 					plugin_slug: '<%= pkg.name %>',
 					build_dir: 'build/<%= pkg.name %>',
 					assets_dir: 'assets',
-					tmp_dir: './tmp'
+					tmp_dir: 'tmp'
 				}
 			}
 		}

@@ -10,7 +10,7 @@ Add support for navigation dropdown menus on mobile / touch devices.
 
 ## Description ##
 
-Navigation dropdown menus are widely used, especially on sites with lots of pages and/or categories, since they allow to go directly to almost every page of the site, with no need to navigate through all the intermediate pages in the hierarchy. Unfortunately dropdown menus do not work well with mobile / touch devices, because the "mouseover" event is not handled, so when the user click a top level menu, the browser follows the link instead of opening the dropdown menu. This plugin is a solution for that situation. On touch devices, the first click / tap on a top level menu (or, in general on any menu with children) only expands the nested dropdown menu, while the second one brings to the link. This is the same behavior natively adopted by iPad / iPhone starting from iOS version 5, so this plugin is intended to work with previous versions of iOS and with other mobile platforms that do not have such native behavior (Android, etc).
+Navigation dropdown menus are widely used, especially on sites with lots of pages and/or categories, as they allow to navigate directly to almost every page of the site, with no need to navigate through all the intermediate pages in the hierarchy. Unfortunately dropdown menus do not work well with mobile / touch devices, because the "mouseover" event is not handled, so when the user click a top level menu, the browser follows the link instead of opening the dropdown menu. This plugin is a solution for that situation. On touch devices, the first click / tap on a top level menu (or, in general on any menu with children) only expands the nested dropdown menu, while the second one brings to the link. This is the same behavior natively adopted by iPad / iPhone starting from iOS version 5, so this plugin is intended to work with previous versions of iOS and with other mobile platforms that do not have such native behavior (Android, Windows, etc).
 
 ### Links ###
 
@@ -47,6 +47,16 @@ Example (based on Twenty Eleven theme markup):
 	add_filter( 'black_studio_touch_dropdown_menu_selector', 'my_custom_selector' );
 	function my_custom_selector( $selector ) {
 	    return 'nav li:has(ul) > a';
+	}
+
+
+### Forcing plugin's behavior on iOS ###
+
+The plugin behavior is intentionally disabled on Apple devices with iOS version 5 or later, as it should be provided natively by the devices. Anyway, if you want to force the application even on these devices, there's a filter hook for that. You may use the following snippet:
+
+	add_filter( 'black_studio_touch_dropdown_menu_force_ios5', 'my_force_ios5' );
+	function my_force_ios5( $force ) {
+	    return true;
 	}
 
 
