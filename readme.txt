@@ -1,9 +1,9 @@
 === Black Studio Touch Dropdown Menu ===
 Contributors: black-studio, marcochiesi, thedarkmist
-Donate link: http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/
+Donate link: https://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/
 Tags: touch, touchscreen, mobile, menu, dropdown, drop-down, nav, navigation, ipad, iphone, android, click
 Requires at least: 3.0
-Tested up to: 4.4
+Tested up to: 4.9
 Stable tag: 1.0.0
 
 Add support for navigation dropdown menus on mobile / touch devices.
@@ -14,19 +14,19 @@ Navigation dropdown menus are widely used, especially on sites with lots of page
 
 = Links =
 
-* [Black Studio web site](http://www.blackstudio.it/en/)
-* [Plugin's web page](http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/)
-* [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu)
+* [Black Studio web site](https://www.blackstudio.it/en/)
+* [Plugin's web page](https://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/)
+* [Support forum](https://wordpress.org/support/plugin/black-studio-touch-dropdown-menu)
 * Follow us on [Twitter](https://twitter.com/blackstudioita), [Facebook](https://www.facebook.com/blackstudiocomunicazione), [LinkedIn](https://www.linkedin.com/company/black-studio) and [GitHub](https://github.com/black-studio)
 
 = Get involved =
 
 * Developers can contribute to the source code on our [GitHub repository](https://github.com/black-studio/black-studio-touch-dropdown-menu).
-* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-touch-dropdown-menu#postform) or making a [donation](http://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/).
+* Users can contribute by leaving a 5 stars [review](https://wordpress.org/support/view/plugin-reviews/black-studio-touch-dropdown-menu#postform) or making a [donation](https://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-dropdown-menu/).
 
 = Credits =
 
-This plugin was inspired by the article ["Make CSS drop-down menus work on touch devices"](http://snippets.webaware.com.au/snippets/make-css-drop-down-menus-work-on-touch-devices/) written by Ross McKay, although it uses a totally different javascript code.
+This plugin was inspired by the article ["Make CSS drop-down menus work on touch devices"](https://snippets.webaware.com.au/snippets/make-css-drop-down-menus-work-on-touch-devices/) written by Ross McKay, although it uses a totally different javascript code.
 
 == Installation ==
 
@@ -62,7 +62,7 @@ function my_force_ios5( $force ) {
 
 = Troubleshooting =
 
-If you think the plugin doesn't work as expected. please post a message in the [Support forum](http://wordpress.org/support/plugin/black-studio-touch-dropdown-menu), providing the following information:
+If you think the plugin doesn't work as expected. please post a message in the [Support forum](https://wordpress.org/support/plugin/black-studio-touch-dropdown-menu), providing the following information:
 
 * Description of the problem and steps to reproduce it
 * Error messages if any (especially in the browser javascript console)
@@ -77,7 +77,7 @@ If you think the plugin doesn't work as expected. please post a message in the [
 * Total refactoring of plugin's source code
 * Added project to [GitHub](https://github.com/black-studio/black-studio-touch-dropdown-menu)
 * Improved code quality and security thanks to [Scrutinizer](https://scrutinizer-ci.com/g/black-studio/black-studio-touch-dropdown-menu/) service
-* Improved development workflow thanks to [Grunt](http://gruntjs.com/)
+* Improved development workflow thanks to [Grunt](https://gruntjs.com/)
 
 = 0.3 (2014-08-02) =
 * Added support for Internet Explorer 10+ on Windows 8 touch devices
