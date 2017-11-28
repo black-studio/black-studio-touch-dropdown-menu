@@ -4,7 +4,7 @@ Donate link: https://www.blackstudio.it/en/wordpress-plugins/black-studio-touch-
 Tags: touch, touchscreen, mobile, menu, dropdown, drop-down, nav, navigation, ipad, iphone, android, click
 Requires at least: 3.0
 Tested up to: 4.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 Add support for navigation dropdown menus on mobile / touch devices.
 
@@ -72,6 +72,10 @@ If you think the plugin doesn't work as expected. please post a message in the [
 * List of other Wordpress plugins installed
 
 == Changelog ==
+
+= 1.0.1 (2017-11-28) =
+* Maintenance release to avoid the plugin being marked as not up to date
+* Updated documentation
 
 = 1.0.0 (2015-11-20) =
 * Total refactoring of plugin's source code

@@ -9,7 +9,7 @@
  * Plugin Name:       Black Studio Touch Dropdown Menu
  * Plugin URI:        https://wordpress.org/plugins/black-studio-touch-dropdown-menu/
  * Description:       Add support for navigation dropdown menus on mobile / touch devices.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Black Studio
  * Author URI:        http://www.blackstudio.it
  * License:           GPLv3
