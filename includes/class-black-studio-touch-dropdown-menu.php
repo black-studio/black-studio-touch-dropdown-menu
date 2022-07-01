@@ -58,7 +58,7 @@ class Black_Studio_Touch_Dropdown_Menu {
 	public function __construct() {
 
 		$this->plugin_name = 'black-studio-touch-dropdown-menu';
-		$this->version = '1.0.1';
+		$this->version = '1.0.2';
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
