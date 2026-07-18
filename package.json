@@ -8,7 +8,8 @@
   },
   "overrides": {
     "minimatch": ">=3.1.5",
-    "tmp": ">=0.2.6"
+    "tmp": ">=0.2.6",
+    "adm-zip": "^0.6.0"
   },
   "devDependencies": {
     "grunt": "^1.5.3",
